@@ -1,0 +1,108 @@
+
+html {
+  height: 100%;
+}
+
+body {
+	background-color: black;
+	
+	color: white;
+	min-height: 100%;
+}
+
+.banner {
+	background-image: linear-gradient(#191970, black);
+	border-radius: 4px;
+}
+
+.content {
+	background-image: linear-gradient(black, #000080, black);
+}
+
+.table-hover>tbody>tr:hover {
+	background-color: #337ab7;
+	color: white;
+	cursor: pointer;
+}
+
+.celda {
+	padding: 10px;
+}
+
+.vcenter {
+	display: inline-block;
+	vertical-align: bottom;
+	float: none;
+	width: 100%;
+}
+
+.table>thead>tr>th {
+	border-bottom: white thin solid;
+}
+
+.table>tbody>tr>td {
+	border-bottom: white thin solid;
+}
+
+.table>tfoot>tr>td {
+	border-top: white thin solid;
+}
+
+.table {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.list-group-item {
+	 position:relative;
+	 display:block;
+	 padding:10px 15px;
+	 margin-bottom:-1px;
+	 background-color:transparent;
+	 border:1px solid transparent !important;
+}
+
+.panel{
+	background-color: transparent;
+}
+
+.config{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.config-content{
+	padding-left: 10px;
+	
+}
+
+.menu-btn{
+	width: 100%;
+}
+
+.menu-btn-row{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.btn-icon{
+	padding-left: 40%;
+}
+
+.btn-icon-md{
+	font-size: 18px;
+	padding-left: 30%;
+	
+}
+
+.error-msg{
+	color: #d9534f;
+	font-size: 14px;
+	padding-top: 50px;
+}
+
+.link {
+	cursor: pointer;
+}
+.link:hover {
+	color: red;
+}
+

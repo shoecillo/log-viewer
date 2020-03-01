@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas Backupper</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<link href="css/master.css" rel="stylesheet" />
+
+</head>
+<body ng-app="logviewerApp">
+	<div ng-controller="logViewerCtrl">
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <p class="navbar-text">
+		      	<i class="fa fa-file-text-o" aria-hidden="true"></i>
+		      	&nbsp;Log Viewer
+		      </p>
+		      <a class="btn btn-primary navbar-btn" href="#" ng-repeat="app in appz" ng-href="/#/{{app.app}}">
+		        {{app.app}}
+		      </a>
+		      <p class="navbar-text navbar-right pull-right" ng-show="selectedApp!=''">
+		      	<span style="font-size: 20px;">Selected Application:<i style="color: white;">&nbsp;{{selectedApp}}</i></span>
+		      </p>
+		    </div>
+		  </div>
+		</nav>
+		
+		<div ng-view></div>
+		
+	</div>
+
+	<script type="text/javascript" src="jslib/jquery.min.js"></script>
+	<script type="text/javascript" src="jslib/angular.min.js"></script>
+	<script type="text/javascript" src="jslib/angular-route.min.js"></script>
+	<script type="text/javascript" src="jslib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="jslib/moment.min.js"></script>
+	<script type="text/javascript" src="jslib/moment-with-locales.min.js"></script>
+
+	<script type="text/javascript" src="app/app.js"></script>
+
+</body>
+</html>

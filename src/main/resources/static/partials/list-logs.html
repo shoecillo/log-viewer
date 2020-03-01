@@ -1,0 +1,36 @@
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="col-md-12 col-lg-4">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Download</th>
+						<th>File name</th>
+						<th>Log Size</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="log in lsLogs">
+						<td><a ng-href="/getFile/{{selectedApp}}/{{log.path}}" class="pull-left">
+								<i class="fa fa-download fa-lg" aria-hidden="true"></i>Download
+						</a></td>
+						<td><span class="link" ng-click="getFile(log.path)">{{log.path}}</span>
+						</td>
+						<td><span>{{log.size}}</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div
+				style="overflow: auto; height: 600px; width: 100%; white-space: nowrap;">
+
+			</div>
+		</div>
+	</div>
+
+</div>
